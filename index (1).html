@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>האינתיפאדה השנייה –  </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #fff;
+      color: #006400;
+      transition: background 0.5s ease;
+    }
+    header {
+      background: rgba(0,100,0,0.8);
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 28px;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      background: #006400;
+      padding: 12px;
+      flex-wrap: wrap;
+    }
+    nav button {
+      background: #32CD32;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      cursor: pointer;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav button:hover {
+      background: #00FF00;
+    }
+    .hero {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 10px auto;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    section {
+      display: none;
+      padding: 40px 25px;
+      max-width: 1000px;
+      margin: auto;
+      line-height: 1.8;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s, transform 0.5s;
+    }
+    section.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      color: #006400;
+      margin-bottom: 10px;
+    }
+    .fact {
+      background: rgba(0,128,0,0.1);
+      border-right: 4px solid #006400;
+      padding: 15px;
+      margin: 25px 0;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body><header>
+  האינתיפאדה השנייה
+</header><nav>
+  <button onclick="showSection('start')">איך זה התחיל</button>
+  <button onclick="showSection('during')">מה קרה בזמן האינתיפאדה</button>
+  <button onclick="showSection('effects')">ההשפעות</button>
+  <button onclick="showSection('summary')">סיכום</button>
+</nav><div class="hero">
+  <img src="https://uploads.onecompiler.io/448x3e2j6/448x3hbgc/1000039414.jpg" alt="תמונה פתיח" />
+</div><section id="start" class="active">
+  <h2>איך האינתיפאדה השנייה התחילה</h2>
+  <p>
+    האינתיפאדה השנייה פרצה כעימות רחב ומתמשך לאחר תקופה ארוכה של מתיחות, חוסר אמון ואלימות מקומית.
+    בשלביה הראשונים נרשמה הסלמה מהירה מאוד, והעימות הפך כמעט מיד לאלים וקשה.
+    בניגוד לאירועים קודמים, לא מדובר היה במחאה אזרחית בלבד, אלא בהתנגשות ישירה ורחבת היקף.
+  </p>
+  <p>
+    כבר בתחילתה ניתן היה לראות מעורבות של גורמים חמושים, שימוש באמצעי לחימה, ותחושה כללית שהמצב יוצא משליטה.
+  </p>
+</section><section id="during">
+  <h2>מה קרה בזמן האינתיפאדה</h2>
+  <p>
+    במהלך האינתיפאדה השנייה התרחשו עימותים אלימים כמעט מדי יום.
+    פיגועים, ירי ומטעני חבלה הפכו לחלק מהמציאות, לצד פעולות צבאיות נרחבות כמו כניסות לערים, מעצרים וסגרים.
+  </p>
+  <p>
+    הלחימה התרחשה בלב אזורים אזרחיים, דבר שפגע קשות בשגרת החיים: בתי ספר נסגרו, מקומות עבודה הושבתו,
+    והתנועה בין ערים וכפרים הפכה למסובכת ומוגבלת.
+  </p>
+</section><section id="effects">
+  <h2>מה קרה בגלל האינתיפאדה</h2>
+  <p>
+    האינתיפאדה השנייה הובילה לשינויים עמוקים במצב הביטחוני, החברתי והכלכלי.
+    ננקטו צעדים שנועדו לצמצם אלימות ולהגביר שליטה ביטחונית, אך במקביל נפגעה האוכלוסייה האזרחית משני הצדדים.
+  </p>
+  <p>
+    נוצר ניתוק גובר בין ישראלים לפלסטינים, הן במרחב הפיזי והן ברמה התודעתית,
+    והאמון ההדדי הלך ונשחק לאורך השנים.
+  </p>
+</section><section id="summary">
+  <h2>סיכום</h2>
+  <p>
+    האינתיפאדה השנייה הייתה נקודת מפנה משמעותית בסכסוך.
+    היא שינתה את דפוסי הלחימה, את תפיסות הביטחון ואת היחסים בין העמים,
+    והשפעותיה מורגשות גם שנים לאחר סיומה.
+  </p>
+</section><script>
+  function showSection(id) {
+    document.querySelectorAll('section').forEach(sec => {
+      sec.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+  }
+</script></body>
